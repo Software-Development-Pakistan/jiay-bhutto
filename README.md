@@ -11,11 +11,12 @@ To get it working you should have a file in the director called `token`
 Put the following content in file named token.
 
 <client_id>,<client_secret>,<AppID>
-
+```
 git clone <project_url>
 npm install
 #do the token thing
 node index.js
+```
 
 
 I agree that this is not the best documentation, you are welcome to send a PR or I'll do a better documentation whenever I get some time.
