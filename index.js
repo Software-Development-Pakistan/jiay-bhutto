@@ -1,20 +1,6 @@
 var FB = require("fb");
 var fs = require("fs");
-var MESSAGES = [
-  "Aik ghante pehle bhi bhutto Zinda tha, abhi bhi bhutto Zinda hai..",
-  "abhi bhi bhutto zinda hai",
-  "Abhi saansain chal rahi hain.",
-  "aik ghante pehle bhi bhutto sahab hayaat thay, abhi bhi bhutto sahab hayat hain..",
-  "you guys know it...",
-  "abhi aik ghante pehlay zinda thay ab kia hoga bhutto sahab ko ?",
-  "abhi tak bhutto sahab hayaat hain",
-  "bhutto sahab ki zindagi barqarar hai",
-  "bhutto sahab tahaal hayaat hain",
-  "bhutto sahab guzishta roz bhi zinda thay, aj bhi bhutto sahab zinda hain",
-  "bhutto sahab zinda hain",
-  "bhutto sahab ZINDA hain"
-];
-
+var MESSAGES = require("./messages").messages;
 fs.readFile("./token", "utf8", function(err, data) {
   if (err) {
     return console.log(err);
