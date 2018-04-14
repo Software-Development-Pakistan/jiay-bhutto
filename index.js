@@ -1,6 +1,6 @@
 var FB = require("fb");
 var fs = require("fs");
-var MESSAGES = require("./messages").messages;
+var MESSAGES = require("./trump").messages;
 fs.readFile("./token", "utf8", function(err, data) {
   if (err) {
     return console.log(err);
